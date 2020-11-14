@@ -72,9 +72,9 @@ export async function translate(
             toLocales.forEach(locale => {
                 let result = {};
                 let index = 0;
-                debug(JSON.stringify(translatableText));
+                debug("TT:" + JSON.stringify(translatableText));
                 for (let [key, _] of translatableText) {
-                    debug(key);
+                    debug("Key:" + key);
                     const translations = map[index++].translations;
                     debug(JSON.stringify(translations));
                     const match = translations.find(r => r.to === locale);

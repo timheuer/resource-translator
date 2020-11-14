@@ -4531,9 +4531,9 @@ async function translate(translatorResource, toLocales, translatableText) {
             toLocales.forEach(locale => {
                 let result = {};
                 let index = 0;
-                core_1.debug(JSON.stringify(translatableText));
+                core_1.debug("TT:" + JSON.stringify(translatableText));
                 for (let [key, _] of translatableText) {
-                    core_1.debug(key);
+                    core_1.debug("Key:" + key);
                     const translations = map[index++].translations;
                     core_1.debug(JSON.stringify(translations));
                     const match = translations.find(r => r.to === locale);
