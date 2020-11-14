@@ -72,6 +72,7 @@ export async function translate(
             toLocales.forEach(locale => {
                 let result = {};
                 let index = 0;
+                debug(JSON.stringify(translatableText));
                 for (let [key, _] of translatableText) {
                     debug(key);
                     const translations = map[index++].translations;
