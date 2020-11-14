@@ -57,6 +57,7 @@ export async function initiate() {
         if (!inputOptions) {
             setFailed('Both a subscriptionKey and endpoint are required.');
         } else {
+            debug(JSON.stringify(inputOptions.destinationLocales));
             if (inputOptions.destinationLocales && inputOptions.destinationLocales.length) {
                 toLocales = inputOptions.destinationLocales;
                 debug(JSON.stringify(toLocales));

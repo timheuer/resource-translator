@@ -18848,6 +18848,7 @@ async function initiate() {
             core_1.setFailed('Both a subscriptionKey and endpoint are required.');
         }
         else {
+            core_1.debug(JSON.stringify(inputOptions.destinationLocales));
             if (inputOptions.destinationLocales && inputOptions.destinationLocales.length) {
                 toLocales = inputOptions.destinationLocales;
                 core_1.debug(JSON.stringify(toLocales));
