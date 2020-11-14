@@ -4532,7 +4532,9 @@ async function translate(translatorResource, toLocales, translatableText) {
                 let result = {};
                 let index = 0;
                 for (let [key, _] of translatableText) {
+                    core_1.debug(key);
                     const translations = map[index++].translations;
+                    core_1.debug(JSON.stringify(translations));
                     const match = translations.find(r => r.to === locale);
                     if (match && match['text']) {
                         result[key] = match['text'];

@@ -73,7 +73,9 @@ export async function translate(
                 let result = {};
                 let index = 0;
                 for (let [key, _] of translatableText) {
+                    debug(key);
                     const translations = map[index++].translations;
+                    debug(JSON.stringify(translations));
                     const match = translations.find(r => r.to === locale);
                     if (match && match['text']) {
                         result[key] = match['text'];
