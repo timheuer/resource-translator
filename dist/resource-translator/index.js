@@ -6206,7 +6206,7 @@ module.exports = require("assert");
 /***/ 361:
 /***/ (function(module) {
 
-module.exports = {"_args":[["axios@0.20.0","C:\\Users\\dapine\\source\\repos\\resource-translator"]],"_from":"axios@0.20.0","_id":"axios@0.20.0","_inBundle":false,"_integrity":"sha512-ANA4rr2BDcmmAQLOKft2fufrtuvlqR+cXNNinUmvfeSNCOF98PZL+7M/v1zIdGo7OLjEA9J2gXJL+j4zGsl0bA==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"axios@0.20.0","name":"axios","escapedName":"axios","rawSpec":"0.20.0","saveSpec":null,"fetchSpec":"0.20.0"},"_requiredBy":["/","/@types/axios"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.20.0.tgz","_spec":"0.20.0","_where":"C:\\Users\\dapine\\source\\repos\\resource-translator","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.10.0"},"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"bundlesize":"^0.17.0","coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.0.2","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^20.1.0","grunt-karma":"^2.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^1.0.18","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^1.3.0","karma-chrome-launcher":"^2.2.0","karma-coverage":"^1.1.1","karma-firefox-launcher":"^1.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-opera-launcher":"^1.0.0","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^1.2.0","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.7","karma-webpack":"^1.7.0","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^5.2.0","sinon":"^4.5.0","typescript":"^2.8.1","url-search-params":"^0.10.0","webpack":"^1.13.1","webpack-dev-server":"^1.14.1"},"homepage":"https://github.com/axios/axios","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test && bundlesize","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.20.0"};
+module.exports = {"_args":[["axios@0.20.0","D:\\GitHub\\resource-translator"]],"_from":"axios@0.20.0","_id":"axios@0.20.0","_inBundle":false,"_integrity":"sha512-ANA4rr2BDcmmAQLOKft2fufrtuvlqR+cXNNinUmvfeSNCOF98PZL+7M/v1zIdGo7OLjEA9J2gXJL+j4zGsl0bA==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"axios@0.20.0","name":"axios","escapedName":"axios","rawSpec":"0.20.0","saveSpec":null,"fetchSpec":"0.20.0"},"_requiredBy":["/","/@types/axios"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.20.0.tgz","_spec":"0.20.0","_where":"D:\\GitHub\\resource-translator","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.10.0"},"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"bundlesize":"^0.17.0","coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.0.2","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^20.1.0","grunt-karma":"^2.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^1.0.18","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^1.3.0","karma-chrome-launcher":"^2.2.0","karma-coverage":"^1.1.1","karma-firefox-launcher":"^1.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-opera-launcher":"^1.0.0","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^1.2.0","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.7","karma-webpack":"^1.7.0","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^5.2.0","sinon":"^4.5.0","typescript":"^2.8.1","url-search-params":"^0.10.0","webpack":"^1.13.1","webpack-dev-server":"^1.14.1"},"homepage":"https://github.com/axios/axios","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test && bundlesize","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.20.0"};
 
 /***/ }),
 
@@ -18828,33 +18828,41 @@ const summary_1 = __webpack_require__(76);
 const translator_1 = __webpack_require__(848);
 const utils_1 = __webpack_require__(163);
 const getOptions = () => {
-    const [baseFileGlob, endpoint, subscriptionKey, region] = [
+    const [baseFileGlob, endpoint, subscriptionKey, region, destinationLocales] = [
         `**/*.${(core_1.getInput('sourceLocale') || 'en')}.resx`,
         core_1.getInput('endpoint', { required: true }),
         core_1.getInput('subscriptionKey', { required: true }),
-        core_1.getInput('region')
+        core_1.getInput('region'), core_1.getInput('destinationLocales').split(",")
     ];
     return {
-        baseFileGlob, subscriptionKey, endpoint, region
+        baseFileGlob, subscriptionKey, endpoint, region, destinationLocales
     };
 };
 async function initiate() {
     try {
         const inputOptions = getOptions();
+        let toLocales;
         if (!inputOptions) {
             core_1.setFailed('Both a subscriptionKey and endpoint are required.');
         }
         else {
-            const availableTranslations = await api_1.getAvailableTranslations();
-            if (!availableTranslations || !availableTranslations.translation) {
-                core_1.setFailed("Unable to get target translations.");
-                return;
+            if (inputOptions.destinationLocales) {
+                toLocales = inputOptions.destinationLocales;
+                core_1.debug(JSON.stringify(toLocales));
+            }
+            else {
+                const availableTranslations = await api_1.getAvailableTranslations();
+                if (!availableTranslations || !availableTranslations.translation) {
+                    core_1.setFailed("Unable to get target translations.");
+                    return;
+                }
+                let toLocales = Object.keys(availableTranslations.translation)
+                    .filter(locale => locale !== sourceLocale)
+                    .sort((a, b) => utils_1.naturalLanguageCompare(a, b));
+                core_1.info(`Detected translation targets to: ${toLocales.join(", ")}`);
+                core_1.debug(JSON.stringify(toLocales));
             }
             const sourceLocale = core_1.getInput('sourceLocale');
-            const toLocales = Object.keys(availableTranslations.translation)
-                .filter(locale => locale !== sourceLocale)
-                .sort((a, b) => utils_1.naturalLanguageCompare(a, b));
-            core_1.info(`Detected translation targets to: ${toLocales.join(", ")}`);
             const resourceFiles = await resource_finder_1.findAllResourceFiles(inputOptions.baseFileGlob);
             if (!resourceFiles || !resourceFiles.length) {
                 core_1.setFailed("Unable to get target resource files.");

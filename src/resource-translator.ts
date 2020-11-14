@@ -33,39 +33,49 @@ interface Options {
     subscriptionKey: string;
     endpoint: string;
     region?: string;
+    destinationLocales?: string[];
 }
 
 const getOptions = (): Options => {
-    const [baseFileGlob, endpoint, subscriptionKey, region] = [
+    const [baseFileGlob, endpoint, subscriptionKey, region, destinationLocales] = [
         `**/*.${(getInput('sourceLocale') || 'en')}.resx`,
         getInput('endpoint', { required: true }),
         getInput('subscriptionKey', { required: true }),
-        getInput('region')
+        getInput('region'), getInput('destinationLocales').split(",")
     ];
 
     return {
-        baseFileGlob, subscriptionKey, endpoint, region
+        baseFileGlob, subscriptionKey, endpoint, region, destinationLocales
     }
 };
 
 export async function initiate() {
     try {
         const inputOptions = getOptions();
+        let toLocales;
+
         if (!inputOptions) {
             setFailed('Both a subscriptionKey and endpoint are required.');
         } else {
-            const availableTranslations = await getAvailableTranslations();
-            if (!availableTranslations || !availableTranslations.translation) {
-                setFailed("Unable to get target translations.");
-                return;
-            }
-            const sourceLocale = getInput('sourceLocale');
-            const toLocales =
+            if (inputOptions.destinationLocales) {
+                toLocales = inputOptions.destinationLocales;
+                debug(JSON.stringify(toLocales));
+            } else {
+                const availableTranslations = await getAvailableTranslations();
+                if (!availableTranslations || !availableTranslations.translation) {
+                    setFailed("Unable to get target translations.");
+                    return;
+                }
+                let toLocales =
                 Object.keys(availableTranslations.translation)
                     .filter(locale => locale !== sourceLocale)
                     .sort((a, b) => naturalLanguageCompare(a, b));
-            info(`Detected translation targets to: ${toLocales.join(", ")}`);
+                info(`Detected translation targets to: ${toLocales.join(", ")}`);
+                debug(JSON.stringify(toLocales));
+            }
 
+            const sourceLocale = getInput('sourceLocale');
+            
             const resourceFiles = await findAllResourceFiles(inputOptions.baseFileGlob);
             if (!resourceFiles || !resourceFiles.length) {
                 setFailed("Unable to get target resource files.");
